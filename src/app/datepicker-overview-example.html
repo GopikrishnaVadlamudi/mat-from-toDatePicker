@@ -16,10 +16,21 @@
   <mat-label>Choose From/To Date</mat-label> 
   <input matInput [matDatepicker]="pickerFrom2"> 
   <input matInput [matDatepicker]="pickerTo2"> 
-  <mat-datepicker #pickerFrom></mat-datepicker> 
-  <mat-datepicker #pickerTo></mat-datepicker> 
+  <mat-datepicker #pickerFrom2></mat-datepicker> 
+  <mat-datepicker #pickerTo2></mat-datepicker> 
 </mat-form-field> 
 <mat-datepicker-toggle matSuffix matTooltip="To Date" [for]="pickerTo2"></mat-datepicker-toggle> 
+
+<br/>
+<mat-datepicker-toggle matPrefix matTooltip="From Date" [for]="pickerFrom3"></mat-datepicker-toggle> 
+<mat-form-field class="testing-s"> 
+  <mat-label>Choose From/To Date</mat-label> 
+  <input matInput matTooltip="From Date" [matDatepicker]="pickerFrom3"> 
+  <input matInput matTooltip="To Date" [matDatepicker]="pickerTo3"> 
+  <mat-datepicker #pickerFrom3></mat-datepicker> 
+  <mat-datepicker #pickerTo3></mat-datepicker> 
+</mat-form-field> 
+<mat-datepicker-toggle matSuffix matTooltip="To Date" [for]="pickerTo3"></mat-datepicker-toggle> 
 <!-- Copyright 2019 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
     can be found in the LICENSE file at http://angular.io/license -->
